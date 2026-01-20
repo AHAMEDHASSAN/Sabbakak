@@ -11,6 +11,13 @@ const tajawal = Tajawal({
 export const metadata: Metadata = {
   title: "منصة السباك المحترف | سباكك في خدمتك",
   description: "اطلب سباك محترف وموثوق في دقائق. خدمتنا سريعة، أسعارنا شفافة، وضماننا أكيد.",
+  themeColor: "#0F172A",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
 };
 
 export default function RootLayout({
