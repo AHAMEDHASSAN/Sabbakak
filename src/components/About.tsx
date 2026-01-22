@@ -2,10 +2,10 @@ import { ArrowLeft, ShieldCheck, UserCheck, Zap } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { label: "سباك موثوق", value: "+500" },
-    { label: "عميل سعيد", value: "+10k" },
-    { label: "مدينة مغطاة", value: "15" },
-    { label: "دقة المواعيد", value: "99%" },
+    { label: "سباك محترف", value: "5" },
+    { label: "عميل سعيد", value: "+50" },
+    { label: "مدينة مغطاة", value: "1" },
+    { label: "دقة المواعيد", value: "100%" },
   ];
 
   return (

@@ -1,4 +1,4 @@
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Facebook, MapPin, MessageCircle, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -21,18 +21,24 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-20">
           {[
-            { icon: Phone, title: "اتصل بنا", value: "92000XXXX", sub: "طوال أيام الأسبوع" },
-            { icon: Mail, title: "البريد الإلكتروني", value: "info@plumbingplatform.sa", sub: "نرد خلال ٢٤ ساعة" },
-            { icon: MapPin, title: "المقر الرئيسي", value: "الرياض، السعودية", sub: "حي الصحافة" }
+            { icon: Phone, title: "اتصل بنا", value: "+966 55 257 6582", sub: "طوال أيام الأسبوع", href: "tel:+966552576582" },
+            { icon: Facebook, title: "فيسبوك", value: "@abdnoob", sub: "تابعنا على فيسبوك", href: "https://m.facebook.com/abdnoob/" },
+            { icon: MapPin, title: "المقر الرئيسي", value: "الطائف، السعودية", sub: "عروس المصايف", href: "#" }
           ].map((item, idx) => (
-            <div key={idx} className="group bg-slate-50 p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] border border-slate-100 flex flex-col items-center text-center transition-all hover:translate-y-[-10px] hover:shadow-2xl hover:shadow-slate-200">
+            <a 
+              key={idx} 
+              href={item.href}
+              target={item.href.startsWith('http') ? "_blank" : "_self"}
+              rel={item.href.startsWith('http') ? "noopener noreferrer" : ""}
+              className="group bg-slate-50 p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] border border-slate-100 flex flex-col items-center text-center transition-all hover:translate-y-[-10px] hover:shadow-2xl hover:shadow-slate-200"
+            >
               <div className="w-16 h-16 md:w-20 md:h-20 bg-white border border-slate-100 rounded-2xl flex items-center justify-center text-primary mb-5 md:mb-6 shadow-sm group-hover:bg-primary group-hover:text-white transition-all">
                 <item.icon size={32} />
               </div>
               <h4 className="font-black text-slate-900 text-2xl md:text-3xl mb-2 md:mb-3">{item.title}</h4>
               <p className="text-lg md:text-xl text-primary font-black mb-1">{item.value}</p>
               <p className="text-base md:text-lg text-slate-500 font-bold">{item.sub}</p>
-            </div>
+            </a>
           ))}
         </div>
 
@@ -46,7 +52,9 @@ const Contact = () => {
               <h5 className="font-black text-green-800 text-3xl md:text-4xl mb-3 md:mb-4">تواصل سريع عبر واتساب</h5>
               <p className="text-lg md:text-2xl text-green-600 font-bold mb-8 md:mb-10">للحالات الطارئة جداً والبلاغات السريعة</p>
               <a 
-                href="#" 
+                href="https://wa.me/966552576582" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex w-full md:w-auto justify-center bg-green-500 hover:bg-green-600 text-white px-8 md:px-16 py-4 md:py-6 rounded-2xl md:rounded-3xl font-black text-2xl md:text-3xl transition-all hover:scale-105 active:scale-95 shadow-xl shadow-green-200"
               >
                 افتح دردشة واتساب

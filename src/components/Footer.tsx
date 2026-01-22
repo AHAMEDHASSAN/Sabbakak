@@ -35,16 +35,16 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-xl text-slate-400 leading-relaxed mb-10 font-medium">
-              المنصة السعودية الرائدة لربط العملاء بأفضل السباكين المعتمدين والموثوقين لضمان جودة الحياة في منزلك.
+              المنصة الرائدة في مدينة الطائف لربط العملاء بأفضل السباكين المعتمدين والموثوقين لضمان جودة الحياة في منزلك.
             </p>
             <div className="flex gap-5">
-              <a href="#" className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110">
-                <Twitter size={24} />
-              </a>
-              <a href="#" className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110">
+              <a href="https://m.facebook.com/abdnoob/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110">
+              <a href="https://m.facebook.com/abdnoob/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110">
+                <Twitter size={24} />
+              </a>
+              <a href="https://m.facebook.com/abdnoob/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110">
                 <Linkedin size={24} />
               </a>
             </div>
@@ -79,7 +79,9 @@ const Footer = () => {
             <h4 className="text-2xl font-black mb-8 border-r-4 border-secondary pr-4">مجتمعنا</h4>
             <p className="text-lg text-slate-400 mb-8 font-bold leading-relaxed">انضم إلى جروب الواتساب الخاص بنا للحصول على عروض حصرية ونصائح سريعة.</p>
             <a 
-              href="#" 
+              href="https://wa.me/966552576582" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center gap-3 bg-green-500 hover:bg-green-600 p-3.5 rounded-2xl transition-all hover:scale-[1.02]"
             >
               <div className="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center text-white shrink-0">

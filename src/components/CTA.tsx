@@ -18,13 +18,23 @@ const CTA = () => {
             لا تنتظر حتى تتفاقم المشكلة، اطلب سباكك الآن واستمتع براحة البال التي تستحقها وبأفضل الأسعار.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-stretch sm:items-center px-4">
-            <button className="bg-white text-secondary px-8 md:px-12 py-5 md:py-6 rounded-2xl md:rounded-3xl font-black text-2xl md:text-3xl flex items-center justify-center gap-3 transition-all hover:scale-105 hover:shadow-2xl active:scale-95 shadow-xl shadow-black/10">
+            <a 
+              href="https://wa.me/966552576582"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-secondary px-8 md:px-12 py-5 md:py-6 rounded-2xl md:rounded-3xl font-black text-2xl md:text-3xl flex items-center justify-center gap-3 transition-all hover:scale-105 hover:shadow-2xl active:scale-95 shadow-xl shadow-black/10"
+            >
               <PhoneCall fill="currentColor" size={28} />
               اطلب الآن
-            </button>
-            <button className="border-4 border-white text-white px-8 md:px-12 py-5 md:py-6 rounded-2xl md:rounded-3xl font-black text-2xl md:text-3xl transition-all hover:bg-white/10 hover:scale-105 active:scale-95">
+            </a>
+            <a 
+              href="https://wa.me/966552576582"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-4 border-white text-white px-8 md:px-12 py-5 md:py-6 rounded-2xl md:rounded-3xl font-black text-2xl md:text-3xl transition-all hover:bg-white/10 hover:scale-105 active:scale-95 flex items-center justify-center"
+            >
               اتصل بنا
-            </button>
+            </a>
           </div>
           <p className="mt-8 md:mt-12 text-lg md:text-xl font-black opacity-80 flex items-center justify-center gap-3">
             <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
